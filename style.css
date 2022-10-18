@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+        background-color: slategray;
+    }
+    
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    [class*="cell"]{
+        aspect-ratio: 1/1;
+        border: 1px solid azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+    }
+
+    .cell10{
+        width: calc(100% / 10);
+    }
+
+    .cell9{
+        width: calc(100% / 9);
+    }
+
+    .cell7{
+        width: calc(100% / 7);
+    }
+    
+    .aqua{
+        background-color: aqua;
+    }
