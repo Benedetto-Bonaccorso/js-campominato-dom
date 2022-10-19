@@ -75,7 +75,10 @@ function caselleGenerator(maxCells,container){
                     points++
                 }
 
-                
+                if(points == maxCells){
+                    gameOver()
+                }
+
                 console.log(currentCell.id)
             })
         }
@@ -96,7 +99,13 @@ function bombPlacer(){
 }
 
 function gameOver(){
-    console.log(points)
-    gameOn = false
-    alert("you have totalized " + points + " Points, refresh the page to retry")
+
+    if(points < maxCells){
+        console.log(points)
+        gameOn = false
+        alert("you have totalized " + points + " Points, refresh the page to retry")
+    } else {
+        gameOn = false
+        alert("you have Won!")
+    }
 }
